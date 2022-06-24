@@ -4,7 +4,6 @@
 // Include any default variable overrides here (though functions won't be available)
 
 // changed colors
-
 $blue: #176ef0;
 $indigo: #732ff8;
 $purple: #8c66d3;
@@ -16,12 +15,38 @@ $green: #198754;
 $teal: #20c997;
 $cyan: #0dcaf0;
 
+// gray-color-variables
+// $white:    #fff;
+// $gray-100: #f8f9fa;
+// $gray-200: #e9ecef;
+// $gray-300: #dee2e6;
+// $gray-400: #ced4da;
+// $gray-500: #adb5bd;
+$gray-600: #6c757d;
+// $gray-700: #495057;
+$gray-800: #343a40;
+// $gray-900: #212529;
+// $black:    #000;
 
 
-// scss-docs-start theme-color-variables
+
+
+// the default color list
+// $primary:       $blue !default;
+// $secondary:     $gray-600 !default;
+// $success:       $green !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $light:         $gray-100 !default;
+// $dark:          $gray-900 !default;
+
+
+// theme-color-variables
 $primary: $indigo;
 $secondary: $purple;
-
+$dark: $gray-800;
+$warning: $yellow;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -29,7 +54,7 @@ $secondary: $purple;
 
 
 /* ----------------
-        1. flex
+        1. flex container
     ---------------- */
 // flex container that centers the form
 .flex-container {
@@ -42,7 +67,7 @@ $secondary: $purple;
 }
 
 /* ----------------
-        1. form
+        2. the form
     ---------------- */
 .form-signin {
     max-width: 360px;
@@ -74,12 +99,26 @@ $secondary: $purple;
     border-top-right-radius: 0;
 }
 
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
 
 .isbn-form input[type="text"] {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
 
+.register-container {
+    max-width: 460px;
+}
+
+.isbn-container {
+    max-width: 800px;
+}
+
+/* ----------------
+        3. buttons
+    ---------------- */
 .isbn-button {
     width: 8em;
 }
