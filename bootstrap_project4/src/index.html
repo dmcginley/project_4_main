@@ -55,11 +55,36 @@
   </nav>
 
 
-  <div class="container">
+  <!-- <div class="container">
     <h1>Hello, Bootstrap!</h1>
     <p>test</p>
+  </div> -->
+
+
+  <div class="container">
+    <div class="p-5 bg-light">
+      <h1 class="display-3">Fluid jumbo heading</h1>
+      <p class="lead">Jumbo helper text</p>
+      <hr class="my-2">
+      <p>More info</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="login_page.html" role="button">Login here</a>
+      </p>
+    </div>
   </div>
 
+
+
+  <div class="container col-md-6 mt-5">
+    <div class="input-group mb-3">
+      <div class="form-floating isbn-form flex-grow-1">
+        <input type="text" class="form-control" name="floatingInput" placeholder="ISBN #"
+          aria-label="Recipient's username" aria-describedby="button-addon2">
+        <label for="floatingInput">ISBN #</label>
+      </div>
+      <button class="btn btn-primary isbn-button" type="button" id="button-addon2">Search</button>
+    </div>
+  </div>
 
   <!-- script -->
   <script type="module" src="./index.js"></script>
