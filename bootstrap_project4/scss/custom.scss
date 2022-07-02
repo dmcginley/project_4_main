@@ -15,6 +15,9 @@ $green: #198754;
 $teal: #20c997;
 $cyan: #0dcaf0;
 
+
+
+
 // gray-color-variables
 $white: #fff;
 // $gray-100: #f8f9fa;
@@ -26,7 +29,7 @@ $gray-600: #6c757d;
 // $gray-700: #495057;
 $gray-800: #343a40;
 // $gray-900: #212529;
-// $black:    #000;
+$black: #000000;
 
 
 
@@ -38,6 +41,7 @@ $gray-800: #343a40;
 // $info:          $cyan !default;
 // $warning:       $yellow !default;
 // $danger:        $red !default;
+
 // $light:         $gray-100 !default;
 // $dark:          $gray-900 !default;
 
@@ -51,11 +55,14 @@ $warning: $yellow;
 
 
 
+
 // $box-shadow: 0 .5rem 1rem rgba($black, .15);
 // $box-shadow-sm: 0 .125rem .25rem rgba($black, .075);
 // $box-shadow-lg: 0 1rem 3rem rgba($black, .175);
 // $box-shadow-inset: inset 0 1px 2px rgba($black, .075);
-$box-shadow: 0 .5rem 1rem rgba($gray-600, .15);
+
+$box-shadow-lg: 0 .5rem 1rem rgba($black, .28);
+
 
 
 
@@ -125,7 +132,7 @@ $box-shadow: 0 .5rem 1rem rgba($gray-600, .15);
 }
 
 .isbn-container {
-    max-width: 540px;
+    max-width: 440px;
 }
 
 /* ----------------
