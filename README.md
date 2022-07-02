@@ -58,20 +58,35 @@ top level folder for the project 4 containing bootstrap django and python files
 
 **General reading and resources.**
 
-### Bootstrap
+#### Bootstrap
 
-### Django
+* [Bootstrap Docs](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 
-### Python
+* []()
+* []()
+* []()
+
+#### Django
+
+#### Python
 
 ## Credits
 
 **Sites content, media, and help with implementing code from tutorials & online help.**
 
-### Bootstrap
+#### Bootstrap
 
-### Django
+* [getbootstrap Docs](https://getbootstrap.com/docs/5.2/forms/overview/) - form input
 
-### Python
+* [mdbootstrap](https://mdbootstrap.com/docs/standard/forms/input-fields/) - form input
+
+* []()
+* []()
+* []()
+
+
+#### Django
+
+#### Python
 
 ## Credits

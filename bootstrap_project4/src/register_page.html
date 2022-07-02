@@ -10,7 +10,7 @@
 <body>
     <main class="flex-container">
         <div class="container">
-            <form class="">
+            <form class="" needs-validation">
 
                 <h1 class="h3 mb-4 fw-normal text-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
@@ -28,33 +28,32 @@
                 <div class="container register-container">
 
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Name">
-                        <label for="floatingInput">Name</label>
+                        <input type="text" class="form-control" id="typeName" placeholder="Name" required>
+                        <label class="form-label" for="typeName">Name</label>
                     </div>
 
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="username">
-                        <label for="floatingInput">Username</label>
+                        <input type="text" class="form-control" id="typeUsername" placeholder="Username" required>
+                        <label class="form-label" for="typeUsername">Username</label>
                     </div>
 
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
+                        <input type="email" class="form-control" id="typeEmail" placeholder="name@example.com" required>
+                        <label for="typeEmail">Email address</label>
                     </div>
 
                     <div class="form-floating mb-3">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Password</label>
+                        <input type="password" class="form-control" id="typePassword" placeholder="Password" required>
+                        <label for="typePassword">Password</label>
                     </div>
 
 
                     <!-- -----------------checkbox and btn-------------- -->
 
                     <div class="checkbox mt-2 mb-3 text-sm-start">
-                        <label>
-                            <input type="checkbox" value="remember-me"> I agree to <a href="">terms
-                                &
-                                conditions</a>
+                        <label class="form-check-label" for="invalidCheck">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            I agree to <a href="">terms & conditions</a>
                         </label>
                     </div>
                     <button class="w-100 btn btn-lg btn-primary mb-3" type="submit">Create Account</button>
@@ -63,7 +62,20 @@
                     <p class="mt-4">Already have an account? <a href="login_page.html">sign in</a></p>
                 </div>
 
+
+
+
+                <a name="" id="" class="btn btn-danger" href="form_test.html" role="button">form_test</a>
+
             </form>
+
+
+
+
+
+
+
+
 
         </div>
 
@@ -73,6 +85,7 @@
 
     <!-- script -->
     <script type="module" src="./index.js"></script>
+    <!-- <script src="js/form_validation.js"></script> -->
 </body>
 
 </html>
