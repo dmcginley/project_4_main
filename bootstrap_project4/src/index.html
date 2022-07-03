@@ -10,72 +10,109 @@
 </head>
 
 <body>
-  <!-- main navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container py-1">
+  <!-- main navbar - offcanvas style -->
+  <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+    <div class="container">
       <a class="navbar-brand fw-bold" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmarks"
+          viewBox="0 0 16 16">
+          <path
+            d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5V4zm2-1a1 1 0 0 0-1 1v10.566l3.723-2.482a.5.5 0 0 1 .554 0L11 14.566V4a1 1 0 0 0-1-1H4z" />
+          <path d="M4.268 1H12a1 1 0 0 1 1 1v11.768l.223.148A.5.5 0 0 0 14 13.5V2a2 2 0 0 0-2-2H6a2 2 0 0 0-1.732 1z" />
+        </svg>
+        Books Scroll
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">page</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                about
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class=" container">
+      <a class="navbar-brand fw-bold" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmarks"
+          viewBox="0 0 16 16">
+          <path
+            d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5V4zm2-1a1 1 0 0 0-1 1v10.566l3.723-2.482a.5.5 0 0 1 .554 0L11 14.566V4a1 1 0 0 0-1-1H4z" />
+          <path d="M4.268 1H12a1 1 0 0 1 1 1v11.768l.223.148A.5.5 0 0 0 14 13.5V2a2 2 0 0 0-2-2H6a2 2 0 0 0-1.732 1z" />
+        </svg>
         Books Scroll
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
         aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+      <div class="collapse navbar-collapse p-1 text-capitalize" id="navbarScroll">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">page</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Link
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
+          
           <li class="nav-item">
-            <a class="nav-link disabled">Link</a>
+            <a class="nav-link" href="#">about</a>
           </li>
         </ul>
-
+      </div>
+      <div>
+        <a class="ms-2" href="">
+          <img class="rounded-circle" src="images/cat-small.jpg" alt="" width="44" height="44">
+        </a>
       </div>
     </div>
-  </nav>
-
-
-  <!-- search bar -->
+  </nav> -->
 
 
 
-
+  <!-- ISBN search bar -->
   <nav class="navbar bg-light sticky-top shadow">
-    <div class="container d-flex justify-content-center justify-content-lg-between">
-
-      <a class="navbar-brand text-black-50" href="#">
-        Documentation
-      </a>
-
+    <div class="container d-flex justify-content-center justify-content-lg-end">
       <div class="input-group my-2 isbn-container">
         <input type="text" class="form-control" placeholder="# ISBN" aria-label="Recipient's username"
           aria-describedby="button-addon2">
         <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add Book</button>
       </div>
-
     </div>
   </nav>
 
 
-
-
+  <!-- jumbo heading -->
   <div class="container">
     <div class="p-5 bg-light">
       <h1 class="display-3">Fluid jumbo heading</h1>
@@ -83,10 +120,13 @@
       <hr class="my-2">
       <p>More info</p>
       <p class="lead">
-        <a class="btn btn-primary btn-lg" href="login_page.html" role="button">Login here</a>
+        <a class="btn btn-primary btn-lg" href="login_page.html" role="button">Login</a>
       </p>
     </div>
   </div>
+
+
+
 
 
   <section class="container p-5">
